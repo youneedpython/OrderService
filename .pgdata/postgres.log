@@ -1,0 +1,25 @@
+2026-03-15 01:17:35.803 UTC [19457] LOG:  starting PostgreSQL 16.13 on x86_64-alpine-linux-musl, compiled by cc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-03-15 01:17:35.804 UTC [19457] LOG:  listening on IPv6 address "::1", port 5432
+2026-03-15 01:17:35.804 UTC [19457] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-03-15 01:17:35.804 UTC [19457] FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+2026-03-15 01:17:35.807 UTC [19457] LOG:  database system is shut down
+2026-03-15 01:18:07.736 UTC [19707] LOG:  starting PostgreSQL 16.13 on x86_64-alpine-linux-musl, compiled by cc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-03-15 01:18:07.736 UTC [19707] LOG:  listening on IPv6 address "::1", port 5432
+2026-03-15 01:18:07.736 UTC [19707] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-03-15 01:18:07.739 UTC [19707] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-03-15 01:18:07.745 UTC [19710] LOG:  database system was shut down at 2026-03-15 01:17:19 UTC
+2026-03-15 01:18:07.751 UTC [19707] LOG:  database system is ready to accept connections
+2026-03-15 01:18:22.453 UTC [19827] LOG:  invalid length of startup packet
+2026-03-15 01:18:22.471 UTC [19828] LOG:  invalid length of startup packet
+2026-03-15 01:18:22.486 UTC [19829] LOG:  invalid length of startup packet
+2026-03-15 01:18:22.507 UTC [19830] LOG:  invalid length of startup packet
+2026-03-15 01:18:36.765 UTC [19921] ERROR:  syntax error at or near "13908" at character 4
+2026-03-15 01:18:36.765 UTC [19921] STATEMENT:  DO 13908 BEGIN IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname='orderuser') THEN CREATE ROLE orderuser LOGIN PASSWORD 'orderpass'; END IF; END 13908;
+2026-03-15 01:18:50.988 UTC [20043] ERROR:  syntax error at or near "\" at character 116
+2026-03-15 01:18:50.988 UTC [20043] STATEMENT:  SELECT 'CREATE DATABASE orderdb OWNER orderuser' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname='orderdb')\gexec
+2026-03-15 01:23:07.843 UTC [19708] LOG:  checkpoint starting: time
+2026-03-15 01:24:45.567 UTC [19708] LOG:  checkpoint complete: wrote 980 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.688 s, sync=0.031 s, total=97.725 s; sync files=334, longest=0.006 s, average=0.001 s; distance=4530 kB, estimate=4530 kB; lsn=0/1935410, redo lsn=0/19353D8
+2026-03-15 01:25:25.548 UTC [22865] LOG:  invalid length of startup packet
+2026-03-15 01:25:25.566 UTC [22866] LOG:  invalid length of startup packet
+2026-03-15 01:25:25.583 UTC [22867] LOG:  invalid length of startup packet
+2026-03-15 01:25:25.598 UTC [22868] LOG:  invalid length of startup packet
